@@ -1,0 +1,14 @@
+# Node dependencies
+node_modules/
+
+# Vite output
+dist/
+
+# Optional: system/editor noise
+.DS_Store
+*.log
+*.swp
+
+# Optional: IDE settings
+.vscode/
+.idea/
