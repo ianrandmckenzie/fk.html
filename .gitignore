@@ -1,9 +1,6 @@
 # Node dependencies
 node_modules/
 
-# Vite output
-dist/
-
 # Optional: system/editor noise
 .DS_Store
 *.log
