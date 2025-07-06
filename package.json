@@ -2,7 +2,7 @@
   "name": "site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
@@ -13,14 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/ianrandmckenzie/fk.html.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["web3", "digital-art", "NFT", "collectibles"],
+  "author": "Featherkin",
+  "license": "© Matthew Boucher",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/ianrandmckenzie/fk.html/issues"
   },
-  "homepage": "https://github.com/ianrandmckenzie/fk.html#readme",
+  "homepage": "https://featherkin.com",
   "devDependencies": {
     "tailwindcss": "^4.1.11",
     "vite": "^7.0.0"
