@@ -1,6 +1,10 @@
 # Node dependencies
 node_modules/
 
+# Build outputs
+devdocs/
+dist/
+
 # Optional: system/editor noise
 .DS_Store
 *.log

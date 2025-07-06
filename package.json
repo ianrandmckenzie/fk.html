@@ -5,9 +5,12 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite --mode development",
+    "build": "vite build --mode production",
+    "preview": "vite preview --outDir docs",
+    "clean": "rm -rf docs devdocs",
+    "clean:dev": "rm -rf devdocs",
+    "clean:prod": "rm -rf docs"
   },
   "repository": {
     "type": "git",
