@@ -11,8 +11,7 @@
     <meta name="theme-color" content="#1f2937" />
 
     <!-- Security headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';">
-    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
@@ -46,15 +45,16 @@
     <link rel="preload" href="./assets/hero-lg.webp" as="image" media="(min-width: 1280px) and (max-width: 1535px)">
     <link rel="preload" href="./assets/hero-2xl.webp" as="image" media="(min-width: 1536px)">
 
+    <link rel="stylesheet" href="./style.css">
     <script type="module" src="/main.js"></script>
   </head>
-  <body class="bg-cover bg-top-center bg-no-repeat min-h-screen bg-[url(./assets/hero.webp)] md:bg-[url(./assets/hero-md.webp)] xl:bg-[url(./assets/hero-lg.webp)] 2xl:bg-[url(./assets/hero-2xl.webp)]">
+  <body class="bg-cover bg-top-center bg-no-repeat min-h-screen bg-[url(./assets/original/hero-short.jpg)] h-tall:bg-[url(./assets/original/hero-tall.jpg)] md:bg-[url(./assets/hero-md.webp)] lg:bg-[url(./assets/hero-lg.webp)] xl:bg-[url(./assets/hero-2xl.webp)] 2xl:bg-[url(./assets/hero-2xl.webp)]">
     <!-- Skip to main content link for keyboard navigation -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded focus:underline">Skip to main content</a>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
 
     <header class="container mx-auto">
       <nav class="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Main navigation">
-        <div class="flex w-full items-center justify-between py-6 border-none">
+        <div class="flex w-full items-center justify-between py-6 lg:border-none">
           <div class="flex items-center">
             <a href="/">
               <span class="sr-only">Featherkin - Home</span>
@@ -67,7 +67,7 @@
                target="_blank"
                aria-label="Join us on Discord (opens in new window)"
                class="inline-block relative h-10 w-10 rounded-full hover:bg-gradient-to-r hover:from-[#5e65af] hover:to-[#8be9a3] p-0.5 transition-all ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-transparent">
-              <div class="bg-black hover:bg-black/75 transition-colors ease-in-out duration-200 rounded-full p-1 h-full w-full flex items-center justify-center">
+              <div class="bg-black/75 hover:bg-black/65 transition-colors ease-in-out duration-200 rounded-full p-1 h-full w-full flex items-center justify-center">
                 <img src="./assets/discord.webp"
                      alt="Discord logo"
                      class="w-full h-full object-contain"
@@ -82,7 +82,7 @@
                target="_blank"
                aria-label="Follow us on X (formerly Twitter) (opens in new window)"
                class="inline-block relative h-10 w-10 rounded-full hover:bg-gradient-to-r hover:from-[#5e65af] hover:to-[#8be9a3] p-0.5 transition-all ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-transparent">
-              <div class="bg-black hover:bg-black/75 transition-colors ease-in-out duration-200 rounded-full p-1 h-full w-full flex items-center justify-center">
+              <div class="bg-black/75 hover:bg-black/65 transition-colors ease-in-out duration-200 rounded-full p-1 h-full w-full flex items-center justify-center">
                 <img src="./assets/x.webp"
                      alt="X (formerly Twitter) logo"
                      class="w-full h-full object-contain"
@@ -97,28 +97,12 @@
       </nav>
     </header>
     <main id="main-content" class="sr-only">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 py-8">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold text-white mb-4 md:text-5xl lg:text-6xl drop-shadow-lg">
-            Featherkin
-          </h1>
-          <p class="text-xl text-white mb-2 md:text-2xl drop-shadow-md">
-            Coming Soon
-          </p>
-          <p class="text-lg text-gray-200 drop-shadow-md">
-            From the artist of Clever Crows
-          </p>
-          <div class="mt-8">
-            <p class="text-sm text-gray-300 max-w-2xl mx-auto drop-shadow-sm">
-              An art-first web-3 project that revolves around world-building, narrated through hand-drawn digital collectables and various media forms.
-            </p>
-          </div>
-          <div class="mt-8">
-            <a href="/security-policy.html"
-               class="text-xs text-gray-400 hover:text-gray-300 transition-colors underline focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-transparent rounded">
-              Security Policy
-            </a>
-          </div>
+      <div>
+        <div>
+          <h1>Featherkin</h1>
+          <p>Coming Soon</p>
+          <p>From the artist of Clever Crows</p>
+          <p>An art-first web-3 project that revolves around world-building, narrated through hand-drawn digital collectables and various media forms.</p>
         </div>
       </div>
     </main>
