@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) and (max-height: 1024px) {
+@media (min-width: 1024px) and (orientation: landscape) and (max-height: 1024px) {
   .ipad-landscape\:bg-\[url\(\.\/assets\/hero-lg\.webp\)\] {
     background-image: url(./assets/hero-lg.webp);
     background-position: center center;
@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: 1194px) and (max-width: 1366px) and (orientation: landscape) and (max-height: 834px) {
+@media (min-width: 1194px) and (orientation: landscape) and (max-height: 834px) {
   .ipad-pro-landscape\:bg-\[url\(\.\/assets\/hero-xl\.webp\)\] {
     background-image: url(./assets/hero-xl.webp);
     background-position: center center;

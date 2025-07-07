@@ -23,7 +23,7 @@ export default defineConfig(({ command, mode }) => {
     server: {
       // Development server configuration
       port: 3000,
-      allowedHosts: ['localhost', '161fcef6967a.ngrok.app'],
+      allowedHosts: ['localhost', '6d85eb21256f.ngrok.app'],
       open: true,
     },
     preview: {
