@@ -5,3 +5,7 @@
     background-image: url(/assets/original/hero-tall.jpg);
   }
 }
+
+.\2xl\:.max-w-8xl {
+  max-width: var(96rem);
+}
