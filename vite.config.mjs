@@ -13,6 +13,12 @@ export default defineConfig(({ command, mode }) => {
       outDir: isProduction ? 'docs' : 'devdocs',
       emptyOutDir: true,
       copyPublicDir: true,
+      rollupOptions: {
+        input: {
+          main: './index.html',
+          'security-policy': './security-policy.html'
+        }
+      }
     },
     server: {
       // Development server configuration
