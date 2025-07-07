@@ -1,11 +1,42 @@
 @import "tailwindcss";
 
-.h-tall\:bg-\[url\(\.\/assets\/original\/hero-tall\.jpg\)\] {
+.h-tall\:bg-\[url\(\.\/assets\/hero-tall\.webp\)\] {
   @media (height >= 668px) and (width <= 640px) {
-    background-image: url(/assets/original/hero-tall.jpg);
+    background-image: url(./assets/hero-tall.webp);
   }
 }
 
-.\2xl\:.max-w-8xl {
-  max-width: var(96rem);
+.h-tall\:bg-center {
+  @media (height >= 668px) and (width <= 640px) {
+    background-position: center center;
+  }
+}
+
+/* iPad Pro specific background handling */
+@media (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+  .ipad-portrait\:bg-\[url\(\.\/assets\/hero-md\.webp\)\] {
+    background-image: url(./assets/hero-md.webp);
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) and (max-height: 1024px) {
+  .ipad-landscape\:bg-\[url\(\.\/assets\/hero-lg\.webp\)\] {
+    background-image: url(./assets/hero-lg.webp);
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1194px) and (max-width: 1366px) and (orientation: landscape) and (max-height: 834px) {
+  .ipad-pro-landscape\:bg-\[url\(\.\/assets\/hero-xl\.webp\)\] {
+    background-image: url(./assets/hero-xl.webp);
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.\32xl\:max-w-8xl {
+  max-width: 96rem;
 }
