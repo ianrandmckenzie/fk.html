@@ -6,9 +6,9 @@
   }
 }
 
-.h-tall\:bg-center {
+.h-tall\:bg-top-center {
   @media (height >= 668px) and (width <= 640px) {
-    background-position: center center;
+    background-position: top center;
   }
 }
 
