@@ -13,7 +13,7 @@
 }
 
 /* iPad Pro specific background handling */
-@media (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 834px) and (orientation: portrait) {
   .ipad-portrait\:bg-\[url\(\.\/assets\/hero-md\.webp\)\] {
     background-image: url(./assets/hero-md.webp) !important;
     background-position: center 20% !important;
